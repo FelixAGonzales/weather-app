@@ -5,5 +5,38 @@
 }
 
 body {
-  
+  background: linear-gradient(to right top, rgb(65, 103, 200), rgb(184, 69, 186));
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  width: 100;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height:  80vh;
+  background: url("/Users/felixgonzales/Documents/Project Images/Sky.jpeg") no-repeat center;
+  background-size: cover; /* possibly remove */
+  border-radius: 10px;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, black, white);
 }
