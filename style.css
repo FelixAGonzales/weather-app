@@ -38,5 +38,115 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  background: linear-gradient(to bottom, black, white);
+  background: linear-gradient(to bottom, rgb(19, 40, 88), white);
+  z-index: 0;
+}
+
+.top {
+  text-align: center;
+  z-index: 999;
+}
+
+.top h1 {
+  color: aliceblue;
+  line-height: 2;
+  text-shadow: 
+  -1.5px -1.5px 0 rgb(19, 40, 88), /* Top-left shadow */
+  1.5px -1.5px 0 rgb(19, 40, 88),  /* Top-right shadow */
+  -1.5px 1.5px 0 rgb(19, 40, 88),  /* Bottom-left shadow */
+  1.5px 1.5px 0 rgb(19, 40, 88);   /* Bottom-right shadow */
+}
+
+.top input,  /* search bar and button */
+.top button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+}
+
+.top input {
+  background-color: rgb(29, 74, 76);
+  border-bottom: solid 2px rgb(19, 40, 88);
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.top input:focus {
+  color: white;
+  font-size: 14px;
+}
+
+.top input:placeholder {
+  color: white;
+}
+
+.top button {
+  background-color: rgb(232, 199, 137);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.top button:hover {
+  background-color: rgba(195, 166, 114, 0.716);
+}
+
+.top error {
+  color: white;
+  font-size: 14px;
+}
+
+.icon {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.location {
+  padding-bottom: 15px;
+  text-align: center;
+  color: rgb(23, 70, 96);
+  line-height: 1.6;
+  font-weight: bold;
+  text-shadow: 
+  .5px -.5px 0 rgb(252, 255, 240) ;
+}
+
+.location .city {
+  font-size: 30px;
+  line-height: 2;
+}
+
+.location .date {
+  font-size: 20px;
+}
+
+.current {
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+  color: rgb(23, 70, 96);
+  line-height: 1.6;
+  font-weight: bold;
+  text-shadow: 
+  .5px -.5px 0 rgb(252, 255, 240) ;
+  /* background-color: rgba(0, 255, 255, 0.216); */
+}
+
+.current::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 320px;
+  height: 3px;
+  background-color: rgb(23, 70, 96);
 }
